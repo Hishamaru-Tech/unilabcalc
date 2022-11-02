@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=9" />
+    <meta http-equiv="x-ua-compatible" content="ie=10" />
+    <meta http-equiv="x-ua-compatible" content="ie=11" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Laboratory Calculator</title>
+</head>
+<body>
+    <div class="title">
+        <h1 class="style"> <span id="lab-title"> Universal Lab Calculator </span> </h1>
+        <div id="wrapper">
+            <!-- Conversions -->
+            <!-- Using input tag with oninput method to invoke my function doMath() on typing a number. -->
+            <div id="pt-wrapper" class="box-style">
+                <h2 class="style"> <span class="title-style"> PT (INR / Conc) ISI (1.5) </span> </h2>
+                <input type="number" id="ptnum-el" oninput="myPT()" placeholder="PT">
+                <h3  id="pt-el" class="style">INR</h3>
+                <h3  id="pt-el2" class="style">Concenteration</h3>
+            </div>
+
+            <div id="ptspec-wrapper" class="box-style">
+                <h2 class="style"> <span class="title-style"> PT (INR / Conc) ISI (1.0) </span> </h2>
+                <input type="number" id="ptnum-spec" oninput="myspecPT()" placeholder="PT">
+                <h3  id="pt-spec" class="style">INR</h3>
+                <h3  id="pt-spec2" class="style">Concenteration</h3>
+            </div>
+
+            <div id="bun-urea-wrapper" class="box-style">
+                <h2 class="title-style"> BUN / Urea </h2>
+                <input type="number" id="urea-num" oninput="myBUrea()" placeholder="Urea">
+                <input type="number" id="bun-num" oninput="myBUrea()" placeholder="BUN">
+                <h3 id="bun" class="style">BUN</h3>
+                <h3 id="urea" class="style">Urea</h3>
+            </div>
+            
+            <div id="aniongap" class="box-style">
+                <h2 class="title-style"> Anion Gap </h2>
+                <input type="number" id="naNum" oninput="aGap()" placeholder="Na">
+                <input type="number" id="kNum" oninput="aGap()" placeholder="K">
+                <input type="number" id="hco3Num" oninput="aGap()" placeholder="HCO3">
+                <input type="number" id="clNum" oninput="aGap()" placeholder="CL">
+                <h3 id="sodium" class="style">Na</h3>
+                <h3 id="potassium" class="style">K</h3>
+                <h3 id="bicarb" class="style">HCO3</h3>
+                <h3 id="chloride" class="style">Cl</h3>
+                <h3 id="anionGap" class="style">Anion Gap</h3>
+            </div>
+
+            <div id="lipid-wrapper" class="box-style">
+                <h2 class="title-style"> <span class="title-style"> Lipid Profile </span> </h2>
+                <input type="number" id="cholest-el" oninput="myLipid()" placeholder="Cholesterol">
+                <input type="number" id="tg-el" oninput="myLipid()" placeholder="Triglyceride">
+                <input type="number" id="hdl-el" oninput="myLipid()" placeholder="HDL">
+                <h3  id="cholesterol" class="style">Cholesterol</h3>
+                <h3  id="triglyceride" class="style">Triglyceride</h3>
+                <h3  id="hdl" class="style">HDL</h3>
+                <h3  id="ldl" class="style">LDL</h3>
+                <h3  id="vldl" class="style">VLDL</h3>
+                <h3  id="riskfactor1" class="style">RF1</h3>
+                <h3  id="riskfactor2" class="style">RF2</h3>
+            </div>
+
+            <div id="cal-wrapper" class="box-style">
+                <h2 class="title-style"> <span class="title-style"> Calcium (Ionized) </span> </h2>
+                <input type="number" id="cal-el" oninput="ionCalcium()" placeholder="Total Calcium">
+                <input type="number" id="alb-el" oninput="ionCalcium()" placeholder="Albumin">
+                <h3  id="ion-cal" class="style">Calcium (Ionized)</h3>
+            </div>
+        </div>
+    </div>
+    <footer class="page__footer">
+        <p>&copy;2021 All rights reserved to  <a href="https://hishamaru-portfolio.pages.dev/" target="_blank"><span>&lt;/Hishamaru-Tech&gt;</span></a>  Designs.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

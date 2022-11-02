@@ -1,0 +1,140 @@
+    body {
+        background-color:black;
+        }
+
+    #wrapper {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows:minmax(100px, auto);
+        grid-gap: 0.5em;
+        align-items:start;
+        text-align: center;
+        /* justify-self:center; */
+        /* align-self:center; */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-column-gap:1em */
+        /* grid-row-gap:1em; */
+        /* justify-items:end; */
+    }
+
+    .box-style {
+        /* https://stackoverflow.com/questions/23403782/how-do-i-get-boxes-to-have-equal-width-always */
+    }
+
+    #lab-title {
+        font-size:50px;
+        font-weight:bolder;
+        font-style:italic;
+        color:rgb(255, 94, 0);
+    }
+
+    .style {
+        font-size:20px;
+        text-align: center;
+        margin: auto;
+        /* color:rgb(239, 255, 20) */
+    }
+
+    .title-style {
+        font-size:30px;
+        font-style:italic;
+        font-weight:bolder;
+    }
+
+    #pt-wrapper {
+        background-image:linear-gradient(
+            45deg,
+            rgb(7, 97, 170) 44%,
+            rgb(9, 68, 156) 53%,
+            rgb(59, 33, 206) 100%
+        );
+        color:aqua;
+    }
+
+    #ptspec-wrapper {
+        background-image:linear-gradient(
+            45deg,
+            rgb(151, 142, 12) 24%,
+            rgb(101, 134, 9) 53%,
+            rgb(133, 187, 8) 100%
+        );
+        color:rgb(234, 248, 33);
+    }
+
+    #bun-urea-wrapper {
+        background-image:linear-gradient(
+            45deg,
+            rgb(24, 150, 2) 0%,
+            rgb(32, 158, 6) 55%,
+            rgb(0, 145, 31) 100%
+        );
+        color:rgb(93, 250, 41);
+    }
+    
+    #aniongap {
+        background-image: linear-gradient(
+            33deg,
+            rgb(211, 34, 34)3%,
+            rgb(207, 18, 18) 45%,
+            rgba(241, 43, 33, 0.877) 100%
+        );
+        color: rgb(95, 10, 27);
+    }
+
+    #lipid-wrapper {
+        background-color:rgb(199, 133, 10);
+        color:rgb(213, 240, 60);
+    }
+
+    #cal-wrapper {
+        background-color:rgb(112, 13, 51);
+        color:rgb(238, 70, 107);
+    }
+
+    /* Footer Styles */
+    .page__footer {
+        background: #000;
+        padding: 3em;
+        color: #fff;
+    }
+
+    .page__footer a{
+        text-decoration:none;
+    }
+
+    .page__footer p{
+        color: #fff;
+    }
+
+    footer p span{
+        animation: flicker 1.5s infinite alternate;
+        color: rgb(255, 255, 255);
+        padding:3px;
+        font-style:italic;
+        border:1px solid rgb(255, 152, 84);
+        border-radius: 2rem;
+        box-shadow:   0 0 21px rgb(243, 52, 52),
+                    0 0 42px #fc9999,
+                    0 0 82px #d80505,
+                    0 0 92px #f77d7d,
+                    0 0 102px #e72d2d,
+                    inset 0 0 151px #f81717;
+    }
+
+    @keyframes flicker {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px rgb(255, 135, 135),
+        0 0 21px rgb(247, 62, 62),
+        0 0 42px rgb(248, 78, 48),
+        0 0 82px #f0afa3,
+        0 0 92px #df3719,
+        0 0 102px #f5907e,
+        0 0 151px #ff2600;
+        }
+
+        20%, 24%, 55% {       
+        text-shadow:none;
+        }
+}
